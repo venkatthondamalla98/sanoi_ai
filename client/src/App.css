@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* Full-width gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+  50% {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* A soft eCommerce-inspired gradient */
+  }
+  100% {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+  }
+}
+
+.container {
+  animation: gradientAnimation 5s ease infinite;
+}
+
+/* Floating effect for the login form */
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form {
+  animation: slideInUp 1s ease-out;
+}
+
+/* Animated icon or product card effect */
+.product-card {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.1); /* Scale effect for products */
+}
+
+/* Optional floating text animation */
+@keyframes floatText {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.floating-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  animation: floatText 2s ease-in-out infinite;
+}
